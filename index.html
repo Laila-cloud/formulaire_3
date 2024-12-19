@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>formulaire</title>
+</head>
+<body>
+    <!-- Début formulaire -->
+     <div class="container" >
+      <!-- partie gauche formulaire -->
+        <div class="left-side">
+          <img src="/image/dinner-table1.jpg" alt="image restaurant">
+        </div>
+        <!-- partie droite formulaire -->
+        <div class="right-side">
+            <form action="">
+              <!-- titre formulaire -->
+            <div class="title">
+              <h2>Booking place for your dinner !</h2>
+            </div>
+            <div class="duo">
+              <input type="text" id="name" required="autofocus">
+              <label for="name">Your name</label>
+              <input type="phone" id="phone" required>
+              <label for="phone">Your  phone number</label>
+            </div>
+            <div class="time">
+              <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+              <!-- <input type="text" id="time"> -->
+              <select name="time" id="time">
+                <optgroup>
+                  <option value="disabled selected">Food</option>
+                  <option value="hour">1 hour</option>
+                  <option value="hour">2 hours</option>
+                  <option value="hour">3 hours</option>
+                  <option value="hour">4 hours</option>
+                </optgroup>
+            </select>
+            <label for="time">Time</label>
+            </div>
+            <div class="food">
+              <label for="food">Food</label>
+              <select name="food" id="food">
+                  <optgroup>
+                    <option value="disabled selected">Food</option>
+                    <option value="food">food 1</option>
+                    <option value="food">Food 2</option>
+                    <option value="food">Food 3</option>
+                    <option value="food">Food 4</option>
+                  </optgroup>
+              </select>
+              <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+            </div>
+            <p class="dinning">Select Your Dinning Space</p>
+            <div class="space">
+              <button>
+                <span class="number">2</span>
+                <span class="space-num">Person</span>
+              </button>
+              <button>
+                <span class="number">4</span>
+                <span class="space-num">Person</span>
+              </button>
+              <button>
+                <span class="number">6</span>
+                <span class="space-num">Person</span>
+              </button>
+              <button>
+              <span class="number">8</span>
+              <span class="space-num">Person</span>
+              </button>
+            </div>
+            <button class="button">Book now</button>
+            <p class="verifie">Verify your booking into your phone</p>
+            </div>
+            </form>
+      </div>
+    <!-- fin formulaire -->
+</body>
+</html>

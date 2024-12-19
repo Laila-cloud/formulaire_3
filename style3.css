@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+}
+/* Disposition du conteneur */
+body{
+    font-family: sans-serif;
+    font-size: small;
+    /* font-size: 25px; */
+    /* background-color: #221919; */
+    padding: 5px;
+}
+.container{
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    /* margin-top: 150px; */
+    display: flex;
+    /* border: 1px solid black; */
+}
+.left-side > img{
+  background-size: cover;
+  background-position: center;
+    width: 55vh;
+    height: 100vh;
+}
+/* {
+    width: 50%;
+    height: 50rem;
+} */
+/* disposition du formulaire */
+.right-side{
+    background-color: #221919;
+    width: 60vh;
+    /* height: 10%; */
+    /* height: 30%; */
+    color: white;
+    padding: 2rem;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+}
+.title{
+    font-size: 19px;
+    padding-bottom: 5rem;
+    
+} 
+/* gerons les inputs */
+input{
+    border-bottom: 1px solid black;
+    color: white;
+    background: transparent;
+}
+/* animons notre groupe */
+.duo label{
+    position: relative;
+    bottom: 50px;
+    top:50%;
+    /* transform: translateY(-50%); */
+    transition: all 0.3s ease;
+}
+.duo input:focus + label,
+.duo input:valid + label{
+bottom: 70px;
+}
+/* fin animation */
+input[type="time"]::before{
+    border: none;
+    background: transparent;
+}
+.duo{
+    width: 100%;
+    font-size: 15px;
+}
+.duo input{
+    width: 95%;
+    padding: 1rem;
+    font-size: 15px;
+    transition: 0.1s ease;
+}
+.duo input:focus{
+    border-bottom: 1px solid #d1a97e;
+}
+.duo label[for="name"]{
+    color:  #d1a97e;
+}
+.time{
+    flex-direction: row-reverse;
+}
+.time,
+.food {
+    border-bottom: 1px solid #000;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+  /* Le select */
+  select {
+    width: 5%;
+    font-size: 15px;
+    background: transparent;
+    color: #fff;
+  }
+  option {
+    color: #000;
+  }
+  .dinning{
+    font-size: 15px;
+    padding: 15px;
+  }
+   /* button de reservation */
+  
+  /* animation button */
+  .space button {
+    font-weight: bold;
+    position: relative;
+    font-size: 15px;
+    background-color: #d1a97e;
+    border: 1px solid #fff;
+    border-radius: 45px;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  
+  .space button .number {
+    background-color: transparent;
+    color: black;
+    padding: 1rem;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .space button .space-num {
+    display: none;
+    color: black;
+    /* padding-left: 10px; */
+  }
+  
+  .space button:hover {
+    width: auto;
+  }
+  
+  .space button:hover .number {
+    background-color: black;
+    color: white;
+  }
+  .space button:active .space-num {
+    display: inline;
+  }
+  
+  /* fin animation */
+  .number {
+    background: #000;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 50%;
+  }
+  /* Button */
+  .button{
+    padding: 1rem;
+    margin-top: 3rem;
+    width: 45%;
+    font-size: 15px;
+    font-weight: bold;
+    /* border-radius: 10px; */
+    background-color: #d1a97e;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  .verifie {
+    font-size: 15px;
+    color: #d1a97e;
+    padding: 1rem;
+  }
+  /* responsivite */
+  
+  @media screen and (max-width: 920px) {
+    body {
+      padding: 10px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    label {
+      font-size: 1rem;
+    }
+    .container {
+      display: block;
+      margin: 0;
+      width: 100%;
+      padding: 15px;
+      width: 91%;
+    }
+    .left-side {
+      width: 100%;
+    }
+    .left-side img {
+      width: 95%;
+    }
+    .right-side{
+      width: 76%;
+    }
+    .space button {
+      font-size: 10px;
+      padding: 10px;
+    }
+    .space {
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    .button {
+      padding: 1rem;
+      background: #8c2828;
+      color: #fff;
+    }
+    .verifie {
+      font-size: 12px;
+    }
+  }
